@@ -1,0 +1,48 @@
+# ── Datos ────────────────────────────────────────────────
+# Los CSV en bruto del scraping y los intermedios no se versionan.
+# Las tablas finales de data/processed/ sí (alimentan el dashboard).
+data/raw/**
+data/interim/**
+!data/raw/**/.gitkeep
+!data/interim/.gitkeep
+
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# ── Jupyter ──────────────────────────────────────────────
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ── Power BI ─────────────────────────────────────────────
+*.pbix.bak
+*.pbiviz
+TempSaves/
+
+# ── Office ───────────────────────────────────────────────
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# ── Selenium / navegador ─────────────────────────────────
+chromedriver*
+geckodriver*
+.wdm/
+
+# ── Sistema / editores ───────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ── Secretos ─────────────────────────────────────────────
+.env
+*.key
+secrets.*
+credentials.*

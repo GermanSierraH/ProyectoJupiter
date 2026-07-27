@@ -1,0 +1,15 @@
+# Normalización de finales de línea
+* text=auto eol=lf
+*.ipynb text eol=lf
+*.csv   text eol=lf
+
+# Binarios: nunca diff ni normalización
+*.pbix  binary
+*.docx  binary
+*.xlsx  binary
+*.png   binary
+*.jpg   binary
+
+# GitHub Linguist: que el repo no aparezca como 100% Jupyter Notebook
+*.ipynb linguist-detectable=true
+data/*  linguist-vendored

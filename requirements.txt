@@ -1,0 +1,26 @@
+# Proyecto Júpiter · WhiteHosting
+# pip install -r requirements.txt
+
+# Manipulación y análisis de datos
+pandas>=2.0
+numpy>=1.24
+
+# Web scraping
+selenium>=4.15
+webdriver-manager>=4.0
+beautifulsoup4>=4.12
+requests>=2.31
+lxml>=4.9
+
+# Visualización
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.17
+
+# Estadística (líneas de tendencia en plotly)
+statsmodels>=0.14
+scipy>=1.11
+
+# Entorno
+jupyterlab>=4.0
+ipykernel>=6.25
