@@ -131,6 +131,18 @@ Los cuadernos resuelven sus rutas de forma relativa al repositorio (celda *Confi
 lo que no hace falta editar rutas absolutas. Las tablas de `data/processed/` están incluidas, así que los
 cuadernos 02 y 03 son ejecutables sin volver a scrapear.
 
+### Abrir el dashboard
+
+`dashboard/Dashboard WhiteHosting.pbix` carga sus 15 tablas desde `data/processed/` a través de un único
+parámetro de Power Query llamado **`RutaDatos`**. Para actualizarlo en otra máquina:
+
+1. Abrir el `.pbix` en Power BI Desktop.
+2. *Inicio → Transformar datos → Administrar parámetros*.
+3. Poner en `RutaDatos` la ruta absoluta de la carpeta `data/processed` de tu copia del repositorio.
+4. *Inicio → Actualizar*.
+
+No hay que tocar ninguna consulta: las quince construyen su origen como `RutaDatos & "\fichero.csv"`.
+
 **Sobre los scrapers:** requieren Chrome y ejecución local (Selenium no funciona bien en Colab). Se
 incluyen como documentación del proceso; los portales cambian su HTML con frecuencia, por lo que los
 selectores pueden haber quedado obsoletos.
