@@ -120,7 +120,7 @@ escenarios de inversión mediante selección voraz por ROI descendente con presu
 ## Reproducir
 
 ```bash
-git clone https://github.com/<usuario>/proyecto-jupiter-whitehosting.git
+git clone https://github.com/enriquegvda/proyecto-jupiter-whitehosting.git
 cd proyecto-jupiter-whitehosting
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
