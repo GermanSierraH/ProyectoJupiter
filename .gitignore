@@ -46,3 +46,6 @@ desktop.ini
 *.key
 secrets.*
 credentials.*
+
+# Script local de publicacion (no forma parte del proyecto)
+subir_a_github.bat
